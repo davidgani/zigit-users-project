@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { IUserInfoTableData } from "../Shared/IUserInfoTableData";
-import { DefaultColumnFilter } from "./Table/ColumnFilters";
+import  DefaultColumnFilter  from "./Table/ColumnFilters";
 import TableComponent from "./Table/Table";
 import { Column, Row } from "react-table";
 import TableInfoBar from "./TableInfoBar";
