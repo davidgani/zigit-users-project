@@ -1,7 +1,7 @@
 import React from "react";
 import { useTable, useSortBy, useFilters, Column, Row } from "react-table";
 import { useEffect } from "react";
-import "./../../Styles/Table.css"; // Import your existing styles
+import "./../../Styles/Table.css";
 
 export interface TableProps<D extends object> {
   columns: Column<D>[];
@@ -31,6 +31,7 @@ const TableComponent = <D extends object>({
   }, [rows]);
 
   return (
+    <div className="table-container">
     <table {...getTableProps()} className="table">
       <thead>
         {headerGroups.map((headerGroup) => (
@@ -76,6 +77,7 @@ const TableComponent = <D extends object>({
         })}
       </tbody>
     </table>
+    </div>
   );
 };
 
